@@ -1,5 +1,6 @@
 <?php
     Class Model{
+
         var $db;
         var $column;
         var $table;
@@ -19,12 +20,12 @@
             }
         }
 
-        function query($sql = false){
-            $sql && $this->sql = $sql;//무슨문법인고
+        function query($sql=false){
+            $sql && $this->sql = $sql;
             $res = $this->db->prepare($this->sql);
             if($res->execute($this->column)){
                 return $res;
-            } else {
+            }else{
                 echo "<pre>";
                 echo $this->sql;
                 print_r($this->column);
@@ -33,17 +34,17 @@
             }
         }
 
-        function fetch($sql = false){//arg의 표현식이 신기함. 찾아볼것
+        function fetch($sql=false){
             $sql && $this->sql = $sql;
             return $this->query($this->sql)->fetch();
         }
 
-        function fetchAll($sql = false){
+        function fetchAll($sql=false){
             $sql && $this->sql = $sql;
             return $this->query($this->sql)->fetchAll();
         }
 
-        function cnt($sql = false){
+        function cnt($sql=false){
             $sql && $this->sql = $sql;
             return $this->query($this->sql)->rowCount();
         }
@@ -53,18 +54,18 @@
             $cancel = explode("/", $cancel);
             foreach ($arr as $key => $value){
                 if(!in_array($key, $cancel)){
-                    $column .=", {$key} = :{key}\n";
+                    $column .= ", {$key} = :{$key}\n";
                     $this->column[$key] = $value;
                 }
+                return $column = substr($column,2);
             }
-            return $column = substr($column,2);
         }
 
         function combine($column){
             switch ($this->action){
-                case 'insert' : $sql = " INSERT INTO {$this->table} SET \n";break;
-                case 'update' : $sql = " UPDATE {$this->table} SET \n";break;
-                case 'delete' : $sql = " DELETE FROM {$this->table} \n";break;
+                case 'insert' : $sql = "INSERT INT {$this->table} set \n";break;
+                case 'update' : $sql = "UPDATE {$this->table} set \n";break;
+                case 'delete' : $sql = "DELETE FROM {$this->table} \n";break;
             }
             return $sql.=$column;
         }

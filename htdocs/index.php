@@ -6,7 +6,7 @@
     define('_CONFIG', _APP."config/");
     define('_CONTROLLER', _APP."controller/");
     define('_VIEW', _APP."view/");
-    $url = str_replace("index.php","htt://{$_SERVER['HTTP_HOST']}{$_SERVER['PHP_SELF']}");
+    $url = str_replace("index.php","","http://{$_SERVER['HTTP_HOST']}{$_SERVER['PHP_SELF']}");
     define('_URL', $url);
     define('_IMG', _URL."public/img/");
     define('_CSS', _URL."public/common/css/");

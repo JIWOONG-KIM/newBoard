@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a66ac56-a3c5-4739-bbb4-4f4b2d43a586" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/application/view/board/check_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/application/view/board/list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/application/view/board/read_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/application/view/board/write_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/application/view/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/application/view/main/main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/application/view/main/new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/htdocs/public/common/css/board.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/application/application.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/application/application.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/application/config/lib.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/application/config/lib.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/application/model/mode.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/application/model/mode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,43 +26,57 @@
     <session id="681665691">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="css" value="1" />
           <entry key="htaccess" value="1" />
-          <entry key="php" value="8" />
+          <entry key="html" value="2" />
+          <entry key="php" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="8" />
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="2" />
+          <entry key="PHP" value="19" />
           <entry key="htaccess" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="css" value="132" />
           <entry key="htaccess" value="58" />
-          <entry key="php" value="4130" />
+          <entry key="html" value="26" />
+          <entry key="php" value="6231" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="4130" />
+          <entry key="CSS" value="132" />
+          <entry key="HTML" value="26" />
+          <entry key="PHP" value="6231" />
           <entry key="htaccess" value="58" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.php.new.class">
+        <counts>
+          <entry key="PHP Class.type" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/htdocs/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="95">
+              <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -59,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/htdocs/application/config/lib.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+            <state relative-caret-position="54">
+              <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -68,49 +93,57 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/htdocs/application/application.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="209">
+              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/htdocs/application/controller/main.php">
+        <entry file="file://$PROJECT_DIR$/htdocs/application/view/board/read_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/htdocs/application/controller/controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="10" column="59" lean-forward="true" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/htdocs/application/model/mod_main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="247">
+              <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/htdocs/application/model/mode.php">
+        <entry file="file://$PROJECT_DIR$/htdocs/application/view/header.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/htdocs/application/view/main/new.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
-              <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
+            <state relative-caret-position="57">
+              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/htdocs/public/common/css/board.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>print</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -119,14 +152,21 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/htdocs/.htaccess" />
-        <option value="$PROJECT_DIR$/htdocs/index.php" />
-        <option value="$PROJECT_DIR$/htdocs/application/config/lib.php" />
-        <option value="$PROJECT_DIR$/htdocs/application/application.php" />
         <option value="$PROJECT_DIR$/htdocs/application/controller/main.php" />
         <option value="$PROJECT_DIR$/htdocs/application/controller/Controller.php" />
         <option value="$PROJECT_DIR$/htdocs/application/controller/controller.php" />
         <option value="$PROJECT_DIR$/htdocs/application/model/mod_main.php" />
+        <option value="$PROJECT_DIR$/htdocs/application/view/main.html" />
         <option value="$PROJECT_DIR$/htdocs/application/model/mode.php" />
+        <option value="$PROJECT_DIR$/htdocs/application/view/main.php" />
+        <option value="$PROJECT_DIR$/htdocs/application/application.php" />
+        <option value="$PROJECT_DIR$/htdocs/application/config/lib.php" />
+        <option value="$PROJECT_DIR$/htdocs/application/view/header.php" />
+        <option value="$PROJECT_DIR$/htdocs/application/view/main/new.html" />
+        <option value="$PROJECT_DIR$/htdocs/application/view/main/main.php" />
+        <option value="$PROJECT_DIR$/htdocs/index.php" />
+        <option value="$PROJECT_DIR$/htdocs/application/view/board/read_form.php" />
+        <option value="$PROJECT_DIR$/htdocs/public/common/css/board.css" />
       </list>
     </option>
   </component>
@@ -143,7 +183,9 @@
     <option name="width" value="1400" />
     <option name="height" value="983" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -173,34 +215,13 @@
               <item name="newBoard" type="462c0819:PsiDirectoryNode" />
               <item name="htdocs" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newBoard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newBoard" type="462c0819:PsiDirectoryNode" />
-              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newBoard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newBoard" type="462c0819:PsiDirectoryNode" />
-              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="newBoard" type="b2602c69:ProjectViewProjectNode" />
               <item name="newBoard" type="462c0819:PsiDirectoryNode" />
               <item name="htdocs" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newBoard" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newBoard" type="462c0819:PsiDirectoryNode" />
-              <item name="htdocs" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -209,13 +230,17 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\newBoard\htdocs\application\view\main" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\newBoard\htdocs\public" />
       <recent name="D:\newBoard\htdocs\public\common" />
@@ -236,6 +261,17 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="newBoard" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.newBoard" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -246,36 +282,43 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539560663957</updated>
-      <workItem from="1539560665164" duration="17383000" />
+      <workItem from="1539560665164" duration="17452000" />
+      <workItem from="1539645789915" duration="11507000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="newBoard - 2018.10.16 at 08h 49m 55s.xml">
+      <configuration name="newBoard" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17383000" />
+    <option name="totallyTimeSpent" value="28959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18017058" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,13 +328,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/htdocs/.htaccess.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/.htaccess.php" />
     <entry file="file://$PROJECT_DIR$/htdocs/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -299,24 +336,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/application/view/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/application/model/mod_main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/application/model/mode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/application/controller/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="10" column="59" lean-forward="true" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/application/view/main/read_form.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/application/view/board/check_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/application/view/board/write_form.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="95">
+          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/htdocs/application/config/lib.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+        <state relative-caret-position="54">
+          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/application/application.php">
+    <entry file="file://$PROJECT_DIR$/htdocs/public/common/css/board.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="361">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/application/view/main/new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/application/view/main/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -327,26 +419,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/application/model/mod_main.php">
+    <entry file="file://$PROJECT_DIR$/htdocs/application/view/board/list.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htdocs/application/application.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="209">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/application/controller/controller.php">
+    <entry file="file://$PROJECT_DIR$/htdocs/application/view/board/read_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="10" column="59" lean-forward="true" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+        <state relative-caret-position="247">
+          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/htdocs/application/model/mode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="68" column="23" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="23" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/htdocs/application/view/header.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

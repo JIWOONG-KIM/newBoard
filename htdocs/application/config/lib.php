@@ -24,13 +24,20 @@
     function __autoload($className){
         $className = strtolower($className);
         $className2 = preg_replace('/(model|application)(.*)/',"$1",$className);
-        switch($className2){
-            case 'application' : $dir = _APP; break;
-            case 'model' : $dir = _MODEL; break;
-            default : $dir = _CONTROLLER; break;
-        }
-        require_once ("{$dir}{$className}.'.php'");
 
-        throw new Exception("Unabla to load $className");
+        switch($className2){
+            case 'application' :
+                $dir = _APP;
+                break;
+            case 'model' :
+                $dir = _MODEL;
+                break;
+            default :
+                $dir = _CONTROLLER;
+                break;
+        }
+        require_once ("{$dir}{$className}.php");
+        $_GET['param'] =  array('page_type' => 'test', 'action'=> 'list');
+        //throw new Exception("Unabla to load ".$className);
     }
 
