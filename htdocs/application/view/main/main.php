@@ -1,6 +1,5 @@
 <div class="header">
     게시판
-    <?php /*echo _CSS*/?>
 </div>
 <div class="container">
     <div class="title">

@@ -1,11 +1,6 @@
 <?php
     Class Controller{
 
-        var $param;
-        var $db;
-        var $title;
-        var $setAjax;
-
         function __construct($param)
         {
             header("Content-type:text/html;charset=utf=8");
