@@ -12,7 +12,7 @@
         {
             $this->column = NULL;
             $this->param = $param;
-            $this->db = new PDO("mysql:host=localhost:3306;dbname=jw;charset=utf-8","jw","jw");
+            $this->db = new PDO("mysql:host=localhost:3306;dbname=jw;charset=utf8","jw","jw");
             $this->db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
             if(isset($_POST['action'])){
                 $this->action = $_POST['action'];

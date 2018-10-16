@@ -34,7 +34,7 @@
         }
 
         function content(){
-            $this_arr = (array)this;
+            $this_arr = (array)$this;
             extract($this_arr);
             $dir = _VIEW."{$this->param->page_type}/{$this->param->include_file}.php";
             if(file_exists($dir)) require_once ($dir);
