@@ -21,11 +21,11 @@
         }
 
         function header(){
-            $this->setAjax || require_once (_VIEW."header.php");
+            $this->setAjax || require_once(_VIEW . "header.php");
         }
 
         function  footer(){
-            $this->setAjax || require_once (_VIEW."footer.php");
+            $this->setAjax || require_once(_VIEW . "footer.php");
         }
 
         function content(){
