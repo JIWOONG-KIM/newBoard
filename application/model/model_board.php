@@ -19,6 +19,7 @@
             $this->sql = "SELECT * FROM board order by 'reg_date' DESC";
             return $this->fetchAll();
         }
+
         function getListNum(){
             return $this->cnt();
         }
