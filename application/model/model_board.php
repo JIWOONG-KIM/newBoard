@@ -1,24 +1,23 @@
 <?php
     Class Model_board extends Model{
-//        function getList(){
-//            $this->sql = "SELECT * FROM board order by ? DESC";
-//            $reg_date = "reg_date";
-//            try{
-//
-//                $stmt = $this->db->prepare($this->sql);
-//                $stmt->bindColumn(1, $reg_date);
-//                $stmt->execute();
-//                return $stmt->fetchAll();
-//            }catch(PDOException $e){
-//                print $e->getMessage();
-//            }
-//        }
+        function getList(){
+            $this->sql = "SELECT * FROM board order by ? DESC";
+            try{
 
-        function getList()
-        {
-            $this->sql = "SELECT * FROM board order by 'reg_date' DESC";
-            return $this->fetchAll();
+                $stmt = $this->db->prepare($this->sql);
+//                $stmt->bindColumn(1, $_POST['reg_date']);
+                $stmt->execute(array($_POST['reg_date']));
+                return $stmt->fetchAll();
+            }catch(PDOException $e){
+                print $e->getMessage();
+            }
         }
+
+//        function getList()
+//        {
+//            $this->sql = "SELECT * FROM board order by 'reg_date' DESC";
+//            return $this->fetchAll();
+//        }
 
         function getListNum(){
             return $this->cnt();
