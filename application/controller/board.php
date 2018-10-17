@@ -1,6 +1,6 @@
 <?php
 Class Board extends Controller{
-    private  $list = array();
+//    private  $list = array();
 
     function init(){
         $this->list = $this->db->getList();
@@ -17,7 +17,7 @@ Class Board extends Controller{
         }
         $this->action = isset($this->param->num) ? 'update' : 'insert';
 
-        if( $action == insert )
+//        if( $action == insert )
            //model 호출  insert 함수명 호출
 
         $this->subject = isset($this->data->title) ? $this->data->title : NULL;

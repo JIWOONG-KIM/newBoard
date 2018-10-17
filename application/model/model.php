@@ -1,12 +1,11 @@
 <?php
     Class Model{
-
         var $db;
         var $column;
         var $table;
         var $param;
         var $action;
-            var $sql;
+        var $sql;
 
             function __construct($param)
             {
