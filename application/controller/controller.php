@@ -12,7 +12,7 @@
         }
 
         function index(){
-            $method = isset($this->param->action) ? $this->param->action : 'basic';
+            $method = isset($this->param->action) ? $this->param->action : 'init';
             if(method_exists($this, $method)) $this->$method();
             $this->getTitle();
             $this->header();

@@ -62,11 +62,19 @@
         }
 
         function combine($column){
+
+            $sql = '';
             switch ($this->action){
-                case 'insert' : $sql = "INSERT INT {$this->table} set \n";break;
-                case 'update' : $sql = "UPDATE {$this->table} set \n";break;
-                case 'delete' : $sql = "DELETE FROM {$this->table} \n";break;
+                case 'insert' :
+                    $sql = "INSERT INTO {$this->table} set \n";
+                    break;
+                case 'update' : $sql = "UPDATE {$this->table} set \n";
+                    break;
+                case 'delete' : $sql = "DELETE FROM {$this->table} \n";
+                    break;
+                default:
+                    break;
             }
-            return $sql.=$column;
+            return $sql.$column;
         }
     }

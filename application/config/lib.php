@@ -36,9 +36,10 @@
                 $dir = _CONTROLLER;
                 break;
         }
-        echo ">>>".$dir."<br>";
-        echo ">>".$className."<br>";
-        echo ">".$className2."<br>";
+//        echo ">>>".$dir."<br>";
+//        echo ">>".$className."<br>";
+//        echo ">".$className2."<br>";
+//        alert($className);
         require_once ("{$dir}{$className}.php");
         /*$_GET['param'] =  array('page_type' => 'test', 'action'=> 'list');*/
         //throw new Exception("Unabla to load ".$className);

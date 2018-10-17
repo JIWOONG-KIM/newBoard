@@ -2,14 +2,12 @@
     class Application{
         var $param;
 
-        function __construct()
-        {
+        function __construct() {
             $this->getParam();
             new $this->param->page_type($this->param);
         }
 
-        function getParam()
-        {
+        function getParam() {
             if (isset($_GET['param'])) {
                 $get = explode("/", $_GET['param']);
             }
@@ -23,6 +21,5 @@
                 $param['include_file'] = isset($param['action']) ? $param['action'] : $param['page_type'];
                 $param['get_page'] = _URL . "{$param['page_type']}";
                 $this->param = (object)$param;
-            /*}*/
         }
     }

@@ -14,6 +14,9 @@
             return $this->fetch();
         }
 
+//        function insert
+
+
         /*function create(){}*/
 
         /*function action(){
