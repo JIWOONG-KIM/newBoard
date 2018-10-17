@@ -7,19 +7,19 @@
         var $action;
         var $sql;
 
-            function __construct($param)
-            {
-                $this->column = NULL;
-                $this->param = $param;
-                $this->db = new PDO("mysql:host=localhost:3306;dbname=jw;charset=utf8","jw","jw");
-                $this->db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-                if(isset($_POST['action'])){
-                    $this->action = $_POST['action'];
-                    $this->action();
-                }
+        function __construct($param)
+        {
+            $this->column = NULL;
+            $this->param = $param;
+            $this->db = new PDO("mysql:host=localhost:3306;dbname=jw;charset=utf8","jw","jw");
+            $this->db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+            if(isset($_POST['action'])){
+                $this->action = $_POST['action'];
+                $this->action();
             }
+        }
 
-            function query($sql=false){
+        function query($sql=false){
             $sql && $this->sql = $sql;
             $res = $this->db->prepare($this->sql);
             if($res->execute($this->column)){
@@ -31,7 +31,7 @@
                 print_r($this->db->errorInfo());
                 echo "</pre>";
             }
-        }
+         }
 
         function fetch($sql=false){
             $sql && $this->sql = $sql;

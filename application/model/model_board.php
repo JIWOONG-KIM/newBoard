@@ -3,7 +3,6 @@
         function getList(){
             $this->sql = "SELECT * FROM board order by ? DESC";
             try{
-
                 $stmt = $this->db->prepare($this->sql);
 //                $stmt->bindColumn(1, $_POST['reg_date']);
                 $stmt->execute(array($_POST['reg_date']));
