@@ -38,6 +38,11 @@ div{
     padding : 15px;
 }
 
+.writer{
+    padding: 0px;
+    margin : 0px;
+}
+
 #contents{
     width:100%;
 }

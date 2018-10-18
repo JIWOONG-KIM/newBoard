@@ -1,11 +1,3 @@
-<!--<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Read</title>
-    <link rel="stylesheet" href="../../../public/common/css/board.css">
-</head>
-<body>-->
 <div class="header">
     글읽기
 </div>
@@ -21,9 +13,9 @@
     <hr>
     <div class="contents"><?php echo $data->contents?></div>
     <div class="footer">
-        <input class="update_btn" type="button" value="수정">
-        <input class="delete_btn" type="button" value="삭제">
+        <a class="btn update_btn" href="<?php echo "{$this->param->get_page}/write/{$data->num}"?>">수정</a>
+<!--        <a class="btn btn-primary" href="--><?php //echo "{$this->param->get_page}/write/1"?><!--">수정</a>-->
+        <a class="btn btn-primary" href="<?php echo "{$this->param->get_page}/check_pw/{$data->num}"?>">삭제</a>
+<!--        <input class="delete_btn" type="button" value="삭제">-->
     </div>
 </div>
-<!--</body>
-</html>-->
