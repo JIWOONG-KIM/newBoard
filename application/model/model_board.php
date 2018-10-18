@@ -1,46 +1,39 @@
 <?php
     Class Model_board extends Model{
-        function getList(){
-            $this->sql = "SELECT * FROM board order by ? DESC";
-            try{
-                $stmt = $this->db->prepare($this->sql);
-//                $stmt->bindColumn(1, $_POST['reg_date']);
-                $stmt->execute(array($_POST['reg_date']));
-                return $stmt->fetchAll();
-            }catch(PDOException $e){
-                print $e->getMessage();
-            }
+        function getList()
+        {
+            $this->sql = "SELECT * FROM board order by num DESC";
+            return $this->fetchAll();
         }
-
-//        function getList()
-//        {
-//            $this->sql = "SELECT * FROM board order by 'reg_date' DESC";
-//            return $this->fetchAll();
-//        }
 
         function getListNum(){
             return $this->cnt();
         }
 
         function getView(){
-            $this->sql = "SELECT * FROM board where num = '{$this->param->num}'";
+            $this->sql = "SELECT * FROM board where num = ?";
+            $this->column =  array($this->param->num);
             return $this->fetch();
         }
 
-//        function insert
+       function insert(){
+           header("Content-type:text/html;charset=utf8");
+           $this->sql = "INSERT INTO board (title, writer, pwd, contents) values (?,?,?,?)";
+           $this->column = array($_POST['title'], $_POST['writer'], $_POST['pwd'], $_POST['contents']);
+           return $this->query();
+       }
 
+       function update(){
+           header("Content-type:text/html;charset=utf8");
+           $this->sql = "UPDATE board set title = ?, writer = ?, contents = ?, update_date = now()";
+           $this->column = array($_POST['title'], $_POST['writer'], $_POST['pwd'], $_POST['contents']);
+           return $this->query();
+       }
 
-        /*function create(){}*/
-
-        /*function action(){
-            header("Content-type:text/html;charset=utf8");
-            $this->table = 'board';
-            $cancel = $add_sql = "";
-            $msg = "완료";
-            $url = $this->param->get_page;
-            isset($_POST['pw']) && md5($_POST['pw']);
-
-        }*/
-
-
+       function delete(){
+           access($this->cnt("SELECT * FROM board where pw='{$_POST['pw']}' and idx='{$this->param->num}'"),"비밀번호가 일치하지 않습니다.");
+           $this->sql = "UPDATE board set title = ?, writer = ?, contents = ?, update_date = now()";
+           $this->column=array($this->param->num);
+           unset($_POST['pw']);
+       }
     }

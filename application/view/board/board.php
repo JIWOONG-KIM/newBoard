@@ -2,7 +2,7 @@
     게시판
 </div>
 <div class="container auto-center">
-    <table width="100%">
+    <table width="100%" class="table table-hover">
         <colgroup>
             <col width="10%">
             <col width="60%">
@@ -29,7 +29,7 @@
         </tbody>
     </table>
     <div class="footer">
-        <input class="update_btn" type="button" value="수정">
-        <input class="delete_btn" type="button" value="삭제">
+        <a class="btn write_btn" type="button" href="<?php echo "{$this->param->get_page}/write"?>">글쓰기</a>
     </div>
 </div>
+

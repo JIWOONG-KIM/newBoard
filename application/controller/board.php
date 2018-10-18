@@ -11,7 +11,7 @@ Class Board extends Controller{
         $this->data = $this->db->getView();
     }
 
-    function write(){
+    /*function write(){
         if(isset($this->param->num)){
             $this->data = $this->db->getView();
         }
@@ -20,9 +20,18 @@ Class Board extends Controller{
 //        if( $action == insert )
            //model 호출  insert 함수명 호출
 
-        $this->subject = isset($this->data->title) ? $this->data->title : NULL;
+        $this->title = isset($this->data->title) ? $this->data->title : NULL;
         $this->writer = isset($this->data->writer) ? $this->data->writer : NULL;
+        $this->pwd = isset($this->data->pwd) ? $this->data->pwd : NULL;
         $this->contents = isset($this->data->contents) ? $this->data->contents : NULL;
+    }*/
+
+    function insert(){
+        $this->successrow = $this->db->insert();
+    }
+
+    function update(){
+        
     }
 
     function delete(){

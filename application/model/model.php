@@ -13,10 +13,10 @@
             $this->param = $param;
             $this->db = new PDO("mysql:host=localhost:3306;dbname=jw;charset=utf8","jw","jw");
             $this->db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-            if(isset($_POST['action'])){
-                $this->action = $_POST['action'];
-                $this->action();
-            }
+//            if(isset($_POST['action'])){
+//                $this->action = $_POST['action'];
+//                $this->action();
+//            }
         }
 
         function query($sql=false){
@@ -60,20 +60,24 @@
             }
         }
 
-        function combine($column){
+            /*function combine($column){
 
-            $sql = '';
-            switch ($this->action){
-                case 'insert' :
-                    $sql = "INSERT INTO {$this->table} set \n";
-                    break;
-                case 'update' : $sql = "UPDATE {$this->table} set \n";
-                    break;
-                case 'delete' : $sql = "DELETE FROM {$this->table} \n";
-                    break;
-                default:
-                    break;
-            }
-            return $sql.$column;
-        }
+                $sql = '';
+                switch ($this->action){
+                    case 'insert' :
+                        $sql = "INSERT INTO {$this->table} \n";
+                        break;
+                    case 'update' : $sql = "UPDATE {$this->table} set \n";
+                        break;
+                    case 'delete' : $sql = "DELETE FROM {$this->table} \n";
+                        break;
+                    default:
+                        break;
+                }
+                return $sql.$column;
+            }*/
+
+//        function action($sql=false){
+//            return $this->query($this->sql);
+//        }
     }

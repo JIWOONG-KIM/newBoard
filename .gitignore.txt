@@ -1,0 +1,3 @@
+##gitignoreFile##
+
+workspace.xml
