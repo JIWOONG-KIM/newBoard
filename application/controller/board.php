@@ -28,7 +28,7 @@ Class Board extends Controller
             $pwd = $_POST['pwd'];
             $content = $_POST['contents'];
 
-            $arr = array($title, $writer, $pwd, $content);
+            $arr = array(':title' => $title, ':writer' => $writer, ':pwd' => $pwd, ':content' => $content);
 
             $this->successrow = $this->db->insert($arr);
             //json 형태 return
@@ -38,10 +38,6 @@ Class Board extends Controller
         }
     }
 
-    function check_pw()
-    {
-    }
-
     function updateRow()
     {
         try {
@@ -49,19 +45,16 @@ Class Board extends Controller
             $writer = $_POST['writer'];
             $content = $_POST['contents'];
             $num = $_POST['num'];
-
-            $arr = array($title, $writer, $content, $num);
-
-//            $this->successrow = $this->db->updateRow(array(
-//                'title' => $title,
-//                'writer' => $writer,
-//                'content' => $content,
-//                'num' => $num
-//            ));
-
-            $this->successrow = $this->db->updateRow($arr);
-
-
+            $cnt = $this->check_pw($num,$_POST['pwd']);
+            if($cnt>0) {
+                alert("정상적으로 수정 되었습니다");
+                $arr = array(':title' => $title, ':writer' => $writer, ':content' => $content, ':num' => $num);
+                $this->successrow = $this->db->updateRow($arr);
+            }
+            else{
+                alert("수정 실패");
+                echo "<script>history.back();</script>";
+            }
             echo (json_encode(array('result' => true, 'msg' => '정상적으로 게시글이 수정되었습니다.')));
         } catch (Exception $e) {
             return json_encode(array('result' => true, 'msg' => '수정 실패하였습니다'));
@@ -70,6 +63,27 @@ Class Board extends Controller
 
     function deleteRow()
     {
-        $this->successrow = $this->db->deleteRow();
+        try{
+            $cnt = $this->check_pw($this->param->num,$_POST['pwd']);
+            if($cnt>0) {
+                $arr = array($this->param->num);
+                $this->successrow = $this->db->deleteRow($arr);
+//                echo(json_encode(array('result' => true, 'msg' => '정상적으로 게시글이 삭제되었습니다.')));
+//                alert("정상적으로 삭제 되었습니다");
+            }else{
+                alert("삭제실패");
+                echo "<script>history.back();</script>";
+            }
+        }catch(Exception $e){
+            return json_encode(array('result' => true, 'msg' => '삭제 실패하였습니다'));
+        }
+    }
+    function check_pw($num,$pwd){
+        try{
+            $arr = array(':num' => $num, ':pwd' => "{$pwd}");
+            return $this->db->check_pw($arr);
+        }catch(Exception $e){
+            throw new Exception();
+        }
     }
 }

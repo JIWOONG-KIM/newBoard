@@ -1,5 +1,6 @@
 <?php
  Class Main extends Controller{
-     function basic(){
+     function init(){
+         move("/myBoard/board");
      }
  }

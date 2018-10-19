@@ -1,5 +1,5 @@
-<div class="header">
-    글읽기
+<div class="container header">
+    <h3>글읽기</h3>
 </div>
 <div class="container">
     <div class="title">
@@ -13,9 +13,10 @@
     <hr>
     <div class="contents"><?php echo $data->contents?></div>
     <div class="footer">
-        <a class="btn update_btn" href="<?php echo "{$this->param->get_page}/write/{$data->num}"?>">수정</a>
+        <a class="btn btn-primary" href="<?php echo "{$this->param->get_page}/write/{$data->num}"?>">수정</a>
 <!--        <a class="btn btn-primary" href="--><?php //echo "{$this->param->get_page}/write/1"?><!--">수정</a>-->
-        <a class="btn btn-primary" href="<?php echo "{$this->param->get_page}/check_pw/{$data->num}"?>">삭제</a>
+        <a class="btn btn-primary" href="<?php echo "{$this->param->get_page}/check/{$data->num}"?>">삭제</a>
+<!--        <a class="btn btn-primary" href="--><?php //echo "{$this->param->get_page}/deleteRow/{$data->num}"?><!--">삭제</a>-->
 <!--        <input class="delete_btn" type="button" value="삭제">-->
     </div>
 </div>

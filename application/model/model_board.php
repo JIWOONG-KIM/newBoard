@@ -25,41 +25,39 @@ Class Model_board extends Model
         if (empty($arr) === true) {
             throw new Exception("data is empty");
         }
-        $this->sql = "INSERT INTO board (title, writer, pwd, contents) values (?,?,?,?)";
+        $this->sql = "INSERT INTO board (title, writer, pwd, contents) values (:title,:writer,:pwd,:content)";
         $this->column = $arr;
         $this->query();
     }
 
     function updateRow($arr)
     {
+        header("Content-type:text/html;charset=utf=8");
         if (empty($arr) === true) {
             throw new Exception("data is empty");
         }
-//        $arr['pwd'];
-//        $this->column = array($_POST['pwd'], $this->param->num);
-//        access($this->cnt("SELECT * FROM board where pw=? and num=?"), "비밀번호가 일치하지 않습니다.");
-
 //        if ($this->checkPW($_POST['pwd'], $this->param->num) > 0) {
-            $this->sql = "UPDATE board set title = ?, writer = ?, contents = ?, update_date = now() where num = ?";
-            $this->column = $arr;
-            $this->query();
+
+//        alert($this->check_pw($_POST['pwd'], $this->param->num));
+
+        $this->sql = "UPDATE board set title = :title, writer = :writer, contents = :content, update_date = now() where num = :num";
+        $this->column = $arr;
+        $this->query();
 //        } else {
 //            throw new Exception("비밀번호가 일치하지 않습니다");
 //        }
     }
+
     function deleteRow()
     {
-        $this->column = array($_POST['pwd'], $this->param->num);
-        access($this->cnt("SELECT * FROM board where pw=? and num=?"), "비밀번호가 일치하지 않습니다.");
-        $this->sql = "UPDATE board set use_yn = 'N' WHERE num = ?)";
+        $this->sql = "UPDATE board set use_yn = 'N' WHERE num = ?";
         $this->column = array($this->param->num);
-        unset($_POST['pw']);
-//           access(!$this->query(),"삭제완료","/");
-        $this->query();
+        access(!$this->query(), "삭제되었습니다", "{$this->param->get_page}");
     }
-    function checkPW($pwd, $num)
+
+    function check_pw($arr)
     {
-        $this->column = array($pwd, $num);
-        return $this->cnt("SELECT * FROM board where pw=? and num=?");
+        $this->column = $arr;
+        return $this->cnt("SELECT num FROM board where pwd =:pwd and num=:num");
     }
 }

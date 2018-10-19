@@ -12,6 +12,7 @@ Class Model
 
     function __construct($param)
     {
+        header("Content-type:text/html;charset=utf=8");
         $this->column = NULL;
         $this->param = $param;
         $this->db = new PDO("mysql:host=localhost:3306;dbname=jw;charset=utf8", "jw", "jw");

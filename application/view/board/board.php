@@ -1,5 +1,5 @@
-<div class="header">
-    게시판
+<div class="container header">
+    <h3>게시판</h3>
 </div>
 <div class="container auto-center">
     <table width="100%" class="table table-hover">
@@ -29,7 +29,7 @@
         </tbody>
     </table>
     <div class="footer">
-        <a class="btn write_btn" type="button" href="<?php echo "{$this->param->get_page}/write"?>">글쓰기</a>
+        <a class="btn btn-primary" type="button" href="<?php echo "{$this->param->get_page}/write"?>">글쓰기</a>
     </div>
 </div>
 
