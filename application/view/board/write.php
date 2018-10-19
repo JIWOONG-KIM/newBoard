@@ -82,9 +82,11 @@
             type: "post",
             data: $("form").serialize(),
             success: function (data) {
-                // alert('등록 성공');
+                // data = data.toJSON();
+                alert(data.msg);
                 // alert(data);
                 location.href = "/myBoard/board";
+                console.log(data);
             },
             error: function () {
                 // alert('등록 실패');

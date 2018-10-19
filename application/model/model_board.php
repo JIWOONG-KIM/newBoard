@@ -4,7 +4,8 @@ Class Model_board extends Model
 {
     function getList()
     {
-        $this->sql = "SELECT * FROM board WHERE use_yn = 'Y' order by num DESC";
+        $this->sql = "SELECT num, title, writer, reg_date 
+        FROM board WHERE use_yn = 'Y' order by num DESC";
         return $this->fetchAll();
     }
 

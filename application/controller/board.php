@@ -32,7 +32,8 @@ Class Board extends Controller
 
             $this->successrow = $this->db->insert($arr);
             //json 형태 return
-//            echo json_encode(array('result' => true, 'msg' => '정상적으로 게시글이 등록되었습니다.'));
+            return json_encode(array('result' => true, 'msg' => '정상적으로 게시글이 등록되었습니다.'));
+            exit;
         } catch (Exception $e) {
 //            return json_encode(array('result' => false, 'msg' => '등록 실패하였습니다.'));
         }
@@ -56,6 +57,7 @@ Class Board extends Controller
                 echo "<script>history.back();</script>";
             }
             echo (json_encode(array('result' => true, 'msg' => '정상적으로 게시글이 수정되었습니다.')));
+            exit;
         } catch (Exception $e) {
             return json_encode(array('result' => true, 'msg' => '수정 실패하였습니다'));
         }
@@ -68,14 +70,13 @@ Class Board extends Controller
             if($cnt>0) {
                 $arr = array($this->param->num);
                 $this->successrow = $this->db->deleteRow($arr);
-//                echo(json_encode(array('result' => true, 'msg' => '정상적으로 게시글이 삭제되었습니다.')));
-//                alert("정상적으로 삭제 되었습니다");
             }else{
-                alert("삭제실패");
+                alert("비밀번호가 틀립니다");
                 echo "<script>history.back();</script>";
             }
         }catch(Exception $e){
-            return json_encode(array('result' => true, 'msg' => '삭제 실패하였습니다'));
+            alert("삭제실패");
+            echo "<script>history.back();</script>";
         }
     }
     function check_pw($num,$pwd){
