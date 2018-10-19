@@ -51,12 +51,11 @@ Class Board extends Controller
                 alert("정상적으로 수정 되었습니다");
                 $arr = array(':title' => $title, ':writer' => $writer, ':content' => $content, ':num' => $num);
                 $this->successrow = $this->db->updateRow($arr);
+                return json_encode(array('result' => true, 'msg' => '정상적으로 게시글이 수정되었습니다.'));
             }
             else{
-                alert("수정 실패");
-                echo "<script>history.back();</script>";
+                return json_encode(array('result' => true, 'msg' => '비밀번호가 틀렸습니다'));
             }
-            echo (json_encode(array('result' => true, 'msg' => '정상적으로 게시글이 수정되었습니다.')));
             exit;
         } catch (Exception $e) {
             return json_encode(array('result' => true, 'msg' => '수정 실패하였습니다'));

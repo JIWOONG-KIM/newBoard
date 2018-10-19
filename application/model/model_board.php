@@ -16,7 +16,8 @@ Class Model_board extends Model
 
     function getView()
     {
-        $this->sql = "SELECT * FROM board where num = ?";
+        $this->sql = "SELECT title, writer, contents, reg_date
+        FROM board where num = ?";
         $this->column = array($this->param->num);
         return $this->fetch();
     }

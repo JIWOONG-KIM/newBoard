@@ -82,9 +82,7 @@
             type: "post",
             data: $("form").serialize(),
             success: function (data) {
-                // data = data.toJSON();
                 alert(data.msg);
-                // alert(data);
                 location.href = "/myBoard/board";
                 console.log(data);
             },
